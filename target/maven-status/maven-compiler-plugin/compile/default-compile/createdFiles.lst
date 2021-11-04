@@ -1,0 +1,5 @@
+com\TSI\MovieDatabase\ActorRepository.class
+com\TSI\MovieDatabase\MovieRepository.class
+com\TSI\MovieDatabase\MovieDatabaseApplication.class
+com\TSI\MovieDatabase\Actor.class
+com\TSI\MovieDatabase\Movie.class
