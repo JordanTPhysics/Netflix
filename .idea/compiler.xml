@@ -10,9 +10,6 @@
         <module name="MovieDatabase" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="MovieDatabase" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

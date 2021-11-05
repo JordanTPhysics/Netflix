@@ -1,12 +1,13 @@
 package com.TSI.MovieDatabase;
 
-        import javax.persistence.*;
-        import java.util.ArrayList;
+import javax.persistence.*;
+import java.util.ArrayList;
+
 @Entity
 @Table(name = "film", schema = "sakila")
 public class Movie {
     @Id
-    @GeneratedValue(strategy= GenerationType.TABLE)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int film_id;
 
     private String title;
