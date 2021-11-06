@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.tsi.tests.moviedatabase.MovieTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s - in com.tsi.tests.moviedatabase.MovieTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.1 s <<< FAILURE! - in com.tsi.tests.moviedatabase.MovieTest
+isTheGenreCorrect  Time elapsed: 0.022 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: The genre is incorrect ==> expected: <Adventure> but was: <Action>
+	at com.tsi.tests.moviedatabase.MovieTest.isTheGenreCorrect(MovieTest.java:28)
+

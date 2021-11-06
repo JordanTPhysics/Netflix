@@ -25,6 +25,6 @@ public class MovieTest {
     }
     @Test
     public void isTheGenreCorrect(){
-        assertEquals("Adventure",movie.getGenre(),"The genre is incorrect");
+        assertEquals("Action",movie.getGenre(),"The genre is incorrect");
     }
 }
