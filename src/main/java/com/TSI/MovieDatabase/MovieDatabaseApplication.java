@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
+@ResponseBody
 @RequestMapping("/films")
-
 public class MovieDatabaseApplication {
     @Autowired
     private MovieRepository movieRepository;
@@ -46,11 +46,7 @@ public class MovieDatabaseApplication {
         return "Saved";
     }
 
-    @GetMapping("/actordata")
-    public Actor actorData() {
-        Actor tomCruise = new Actor(1, "Tom", "Cruise");
-        return tomCruise;
-    }
+
 
     @GetMapping("/allactors")
     public @ResponseBody Iterable<Actor> getAllActors() {
@@ -65,4 +61,5 @@ public class MovieDatabaseApplication {
         actorRepository.save(savedActor);
         return "Saved";
     }
+
 }
