@@ -22,13 +22,6 @@ public class MovieDatabaseApplication {
         SpringApplication.run(MovieDatabaseApplication.class, args);
     }
 
-    @GetMapping("/moviedata")
-    public Movie movieData() {
-        Movie starWars3 = new Movie("Revenge of the Sith", 2005, 126, "Action");
-        Movie starWars4 = new Movie("A new Hope",1977,135,"Adventure");
-        return starWars4;
-
-    }
 
     @GetMapping("/allmovies")
     public @ResponseBody Iterable<Movie> getAllMovies() {
@@ -37,11 +30,11 @@ public class MovieDatabaseApplication {
 
     @PostMapping("/addMovie")
     public @ResponseBody
-    String addAMovie(@RequestParam String title
+    String addAMovie(@RequestParam int movieId, @RequestParam String title
             , @RequestParam int releaseYr, @RequestParam int length, @RequestParam String genre) {
 
 
-        Movie savedMovie = new Movie(title, releaseYr, length, genre);
+        Movie savedMovie = new Movie(movieId, title, releaseYr, length, genre);
         movieRepository.save(savedMovie);
         return "Saved";
     }

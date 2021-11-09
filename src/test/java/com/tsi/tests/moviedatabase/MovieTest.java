@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MovieTest {
 
-    Movie movie = new Movie("moviename",100,123,"Action");
+    Movie movie = new Movie(1001,"moviename",100,123,"Action");
 
     @Test
      public void isTheTitleCorrect(){

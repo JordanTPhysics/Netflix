@@ -4,11 +4,11 @@ import javax.persistence.*;
 import java.util.ArrayList;
 
 @Entity
-@Table(name = "film", schema = "sakila")
+@Table(name = "film")
 public class Movie {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int film_id;
+    private int movieId;
 
     private String title;
     private int releaseYr;
@@ -16,7 +16,8 @@ public class Movie {
     private String genre;
     private ArrayList<Object> cast;
 
-    public Movie(String title, int releaseYr, int length, String genre) {
+    public Movie(int movieId, String title, int releaseYr, int length, String genre) {
+        this.movieId = movieId;
         this.title = title;
         this.releaseYr = releaseYr;
         this.length = length;
@@ -49,9 +50,9 @@ public class Movie {
         this.length = length;
     }
 
-    public int getFilm_id(){return film_id;}
+    public int getMovieId(){return movieId;}
 
-    public void setFilm_id(){this.film_id = film_id; }
+    public void setMovieId(){this.movieId = movieId; }
 
     public String getGenre() {
         return genre;
