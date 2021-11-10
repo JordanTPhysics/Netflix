@@ -52,7 +52,15 @@ public class MovieDatabaseApplication {
     {
         Actor savedActor = new Actor(actorId, firstName, lastName);
         actorRepository.save(savedActor);
-        return "Saved";
+        return firstName + lastName + "Saved";
     }
+    @DeleteMapping("/deleteActor")
+    public @ResponseBody
+        String deleteAnActor(@RequestParam int actorId) {
 
+        // Actor deleteActor = ActorRepository.deleteById(actorId);
+
+        return actorId + "deleted";
+
+    }
 }
