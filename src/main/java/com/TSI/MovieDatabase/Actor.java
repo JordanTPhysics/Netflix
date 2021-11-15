@@ -2,6 +2,8 @@ package com.TSI.MovieDatabase;
 
 
 import javax.persistence.*;
+import java.util.Optional;
+
 @Entity
 @Table(name = "actor")
 public class Actor {
@@ -23,6 +25,9 @@ public class Actor {
     public Actor(){
 
     }
+
+
+
     public int getActorId() {
         return actorId;
     }

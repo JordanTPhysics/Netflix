@@ -1,11 +1,12 @@
 package com.TSI.MovieDatabase;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 
 @SpringBootApplication
@@ -22,7 +23,7 @@ public class MovieDatabaseApplication {
         SpringApplication.run(MovieDatabaseApplication.class, args);
     }
 
-
+// CRUD OPERATIONS
     @GetMapping("/allmovies")
     public @ResponseBody Iterable<Movie> getAllMovies() {
         return movieRepository.findAll();
@@ -38,9 +39,6 @@ public class MovieDatabaseApplication {
         movieRepository.save(savedMovie);
         return "Saved";
     }
-
-
-
     @GetMapping("/allactors")
     public @ResponseBody Iterable<Actor> getAllActors() {
         return actorRepository.findAll();
@@ -56,11 +54,26 @@ public class MovieDatabaseApplication {
     }
     @DeleteMapping("/deleteActor")
     public @ResponseBody
-        String deleteAnActor(@RequestParam int actorId) {
+        String deleteAnActor(@PathVariable int actorId) {
 
-        // Actor deleteActor = ActorRepository.deleteById(actorId);
+         Optional<Actor> deleteActor =  actorRepository.findById(actorId);
+         if(deleteActor.isPresent()) {
+             actorRepository.deleteById(actorId);
+             return "Actor "+ + actorId + " deleted";
+         } else {
+             throw new RuntimeException("Actor with Id: " + actorId + "not found" );
+         }
+    }
+    @DeleteMapping("/deleteMovie")
+    public @ResponseBody
+    String deleteAMovie(@PathVariable int movieId) {
 
-        return actorId + "deleted";
-
+        Optional<Movie> deleteMovie =  movieRepository.findById(movieId);
+        if(deleteMovie.isPresent()) {
+            movieRepository.deleteById(movieId);
+            return "Movie "+ + movieId + " deleted";
+        } else {
+            throw new RuntimeException("Movie with Id: " + movieId + "not found" );
+        }
     }
 }

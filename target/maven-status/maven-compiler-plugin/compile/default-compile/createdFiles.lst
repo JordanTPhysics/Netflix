@@ -5,4 +5,3 @@ com\TSI\MovieDatabase\AWSsecret.class
 com\TSI\MovieDatabase\MovieDatabaseApplication.class
 com\TSI\MovieDatabase\Actor.class
 com\TSI\MovieDatabase\Movie.class
-com\TSI\MovieDatabase\AppConfig$1.class

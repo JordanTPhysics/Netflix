@@ -11,6 +11,7 @@ import com.amazonaws.services.secretsmanager.model.GetSecretValueResult;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
@@ -22,15 +23,15 @@ public class AppConfig {
 private String accessKey;
 @Value("${cloud.aws.credentials.secret-key}")
 private String secretKey;
-
+    @Bean
     public DataSource dataSource(){
         AWSsecret secrets=getSecret();
         return DataSourceBuilder
                 .create()
-                //.driverClassName()
+                .url("jdbc:" + secrets.getEngine() + "://" + secrets.getHost() + ":" + secrets.getPort() + "/sakila")
+                .driverClassName("com.mysql.cj.jdbc.Driver")
                 .username(secrets.getUsername())
                 .password(secrets.getPassword())
-                .url("jdbc:mysql://awsdatabase.cxxbnnofk43w.us-east-1.rds.amazonaws.com")
                 .build();
 
 
@@ -40,20 +41,13 @@ private String secretKey;
 
     private AWSsecret getSecret() {
 
-        String secretName = "TestingDB";
+        String secretName = "arn:aws:secretsmanager:us-east-1:877439784628:secret:TestingDB-7jPfIh";
         String region = "us-east-1";
 
         // Create a Secrets Manager client
         AWSSecretsManager client = AWSSecretsManagerClientBuilder.standard()
                 .withRegion(region)
-                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey, secretKey)) {
-                    public AWSCredentials getCredentials() {
-                        return null;
-                    }
-
-
-
-                })
+                .withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials(accessKey, secretKey)))
                 .build();
 
         // In this sample we only handle the specific exceptions for the 'GetSecretValue' API.
@@ -73,14 +67,14 @@ private String secretKey;
     }
         if (getSecretValueResult.getSecretString() != null) {
             secret = getSecretValueResult.getSecretString();
-        } else {
-            decodedBinarySecret = new String(Base64.getDecoder().decode(getSecretValueResult.getSecretBinary()).array());
+            return gson.fromJson(secret,AWSsecret.class);
         }
+    return null;
 
-        // Your code goes here.
-        return gson.fromJson(secret,AWSsecret.class);
+
 
 
     }
-
 }
+
+

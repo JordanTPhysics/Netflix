@@ -10,9 +10,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fafcd19-7dcb-44aa-8504-db66b4e3531f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/ActorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/CucumberRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/StepDefs/ActorStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ActorTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AWSsecret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AWSsecret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/ActorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/ActorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/MovieDatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/MovieDatabaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/MovieRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/MovieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/MovieTitleStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tsi/tests/moviedatabase/StepDefs/MovieTitleStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MovieDatabase-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MovieDatabase-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MovieDatabase-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/MovieDatabase-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AWSsecret.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AWSsecret.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/ActorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/ActorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AppConfig$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/MovieDatabaseApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/MovieDatabaseApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/MovieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/MovieRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.tsi.tests.moviedatabase.MovieTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.tsi.tests.moviedatabase.MovieTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.tsi.tests.moviedatabase.MovieTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.tsi.tests.moviedatabase.MovieTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tsi/tests/moviedatabase/MovieTitleStepDefs.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +99,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code-yogi/66. Java Cucumber/src" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5321839" />
@@ -93,32 +130,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: An actor is added to the database" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ActorTest.feature" />
+      <option name="GLUE" value="com/tsi/tests/moviedatabase/StepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Jordan" />
+      <option name="NAME_FILTER" value="^An actor is added to the database$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^An actor is added to the database$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: An actor is added to the database" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Checking the movie title" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Jordan" />
+      <option name="NAME_FILTER" value="^Checking the movie title$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking the movie title$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Checking the movie title" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jordan" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tsi.tests.moviedatabase.*" />
+          <option name="PATTERN" value="com.tsi.tests.moviedatabase.StepDefs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tsi.tests.moviedatabase" />
-      <option name="MAIN_CLASS_NAME" value="com.tsi.tests.moviedatabase.MovieTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tsi.tests.moviedatabase.ActorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieTest.isTheTitleCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActorTest.isTheIdCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jordan" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tsi.tests.moviedatabase.*" />
+          <option name="PATTERN" value="com.tsi.tests.moviedatabase.StepDefs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tsi.tests.moviedatabase" />
-      <option name="MAIN_CLASS_NAME" value="com.tsi.tests.moviedatabase.MovieTest" />
-      <option name="METHOD_NAME" value="isTheTitleCorrect" />
+      <option name="MAIN_CLASS_NAME" value="com.tsi.tests.moviedatabase.ActorTest" />
+      <option name="METHOD_NAME" value="isTheIdCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,15 +213,19 @@
     <list>
       <item itemvalue="Application.MovieDatabaseApplication" />
       <item itemvalue="Cucumber Java.MoviesTest" />
+      <item itemvalue="Cucumber Java.Scenario: Checking the movie title" />
+      <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.MovieTest" />
-      <item itemvalue="JUnit.MovieTest.isTheTitleCorrect" />
+      <item itemvalue="JUnit.ActorTest" />
+      <item itemvalue="JUnit.ActorTest.isTheIdCorrect" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
         <item itemvalue="Application.MovieDatabaseApplication" />
-        <item itemvalue="JUnit.MovieTest" />
-        <item itemvalue="JUnit.MovieTest.isTheTitleCorrect" />
+        <item itemvalue="Cucumber Java.Scenario: Checking the movie title" />
+        <item itemvalue="JUnit.ActorTest.isTheIdCorrect" />
+        <item itemvalue="JUnit.ActorTest" />
       </list>
     </recent_temporary>
   </component>
