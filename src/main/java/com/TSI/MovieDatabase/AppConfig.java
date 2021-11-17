@@ -53,9 +53,7 @@ private String secretKey;
         // See https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
         // We rethrow the exception by default.
 
-        String secret = null,
-
-                decodedBinarySecret;
+        String secret = null;
         GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest()
                 .withSecretId(secretName);
         GetSecretValueResult getSecretValueResult = null;

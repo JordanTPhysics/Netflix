@@ -33,7 +33,7 @@ public class Movie {
     public int getMovieId(){
         return movieId;
     }
-    public void setMovieId(int i){
+    public void setMovieId(int movieId){
         this.movieId = movieId;
     }
 
@@ -72,5 +72,7 @@ public class Movie {
     }
 
 
-}
+
+    }
+
 
