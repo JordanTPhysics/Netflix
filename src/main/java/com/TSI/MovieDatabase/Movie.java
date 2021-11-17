@@ -1,7 +1,7 @@
 package com.TSI.MovieDatabase;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "film")
@@ -18,7 +18,7 @@ public class Movie {
     private int length;
     @Column(name = "description")
     private String genre;
-    private ArrayList<Object> cast;
+
 
     public Movie(int movieId, String title, int releaseYr, int length, String genre) {
         this.movieId = movieId;
@@ -66,13 +66,6 @@ public class Movie {
         this.genre = genre;
     }
 
-    public ArrayList<Object> getCast() {
-        return cast;
-    }
-
-    public void setCast(ArrayList<Object> cast) {
-        this.cast = cast;
-    }
 
 }
 

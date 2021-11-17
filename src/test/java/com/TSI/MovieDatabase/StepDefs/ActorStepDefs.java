@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
 import java.util.Optional;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ActorStepDefs {
@@ -43,7 +43,7 @@ public class ActorStepDefs {
         int expectedId = testActor.getActorId();
         Optional<Actor> actualActorOption = actorRepository.findById(expectedId);
         Actor actualActor = actualActorOption.get();
-        assertTrue(actualActor.equals(testActor));
+        assertEquals("The actor was not found", testActor, actualActor);
 
 
     }

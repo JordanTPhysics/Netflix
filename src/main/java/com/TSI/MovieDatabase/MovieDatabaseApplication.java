@@ -3,8 +3,9 @@ package com.TSI.MovieDatabase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
+
 import org.springframework.web.bind.annotation.*;
+import software.amazon.ion.NullValueException;
 
 import java.util.Optional;
 
@@ -50,7 +51,7 @@ public class MovieDatabaseApplication {
     {
         Actor savedActor = new Actor(actorId, firstName, lastName);
         actorRepository.save(savedActor);
-        return firstName + lastName + "Saved";
+        return "Saved";
     }
     @DeleteMapping("/deleteActor")
     public @ResponseBody
@@ -61,7 +62,7 @@ public class MovieDatabaseApplication {
              actorRepository.deleteById(actorId);
              return "Actor "+ + actorId + " deleted";
          } else {
-             throw new RuntimeException("Actor with Id: " + actorId + "not found" );
+             throw new NullValueException("Actor with Id: " + actorId + "not found" );
          }
     }
     @DeleteMapping("/deleteMovie")
@@ -73,7 +74,7 @@ public class MovieDatabaseApplication {
             movieRepository.deleteById(movieId);
             return "Movie "+ + movieId + " deleted";
         } else {
-            throw new RuntimeException("Movie with Id: " + movieId + "not found" );
+            throw new NullValueException("Movie with Id: " + movieId + "not found" );
         }
     }
 }

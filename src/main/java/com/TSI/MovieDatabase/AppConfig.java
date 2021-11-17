@@ -1,7 +1,6 @@
 package com.TSI.MovieDatabase;
 
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSCredentialsProvider;
+
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.secretsmanager.AWSSecretsManager;
@@ -15,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
-import java.util.Base64;
+
 
 @Configuration
 public class AppConfig {
@@ -55,6 +54,7 @@ private String secretKey;
         // We rethrow the exception by default.
 
         String secret = null,
+
                 decodedBinarySecret;
         GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest()
                 .withSecretId(secretName);
