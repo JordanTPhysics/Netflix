@@ -4,4 +4,5 @@ cloud:
         static: us-east-1
         auto: false
       credentials:
-        access-key:
+        access-key: AKIA4YS34S22DOMXFV5O
+        secret-key: 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

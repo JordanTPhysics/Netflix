@@ -4,15 +4,15 @@ import javax.persistence.*;
 import java.util.ArrayList;
 
 @Entity
-@Table(name = "Movie")
+@Table(name = "film")
 public class Movie {
     @Id
-    @GeneratedValue(strategy= GenerationType.TABLE)
-    @Column(name = "movieId")
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name = "film_id")
     private int movieId;
     @Column(name = "title")
     private String title;
-    @Column(name = "releaseYr")
+    @Column(name = "release_year")
     private int releaseYr;
     @Column(name = "length")
     private int length;

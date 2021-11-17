@@ -1,2 +1,3 @@
-com\tsi\tests\moviedatabase\MovieTest.class
-com\tsi\tests\moviedatabase\MovieTitleStepDefs.class
+com\TSI\MovieDatabase\CucumberRunner.class
+com\TSI\MovieDatabase\StepDefs\MovieTitleStepDefs.class
+com\TSI\MovieDatabase\StepDefs\ActorStepDefs.class

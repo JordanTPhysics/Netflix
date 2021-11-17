@@ -29,7 +29,7 @@ private String secretKey;
         return DataSourceBuilder
                 .create()
                 .url("jdbc:" + secrets.getEngine() + "://" + secrets.getHost() + ":" + secrets.getPort() + "/sakila")
-                .driverClassName("com.mysql.cj.jdbc.Driver")
+
                 .username(secrets.getUsername())
                 .password(secrets.getPassword())
                 .build();
@@ -41,7 +41,7 @@ private String secretKey;
 
     private AWSsecret getSecret() {
 
-        String secretName = "arn:aws:secretsmanager:us-east-1:877439784628:secret:TestingDB-7jPfIh";
+        String secretName = "TestingDB";
         String region = "us-east-1";
 
         // Create a Secrets Manager client
