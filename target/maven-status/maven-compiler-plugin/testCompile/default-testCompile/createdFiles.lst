@@ -1,3 +1,5 @@
 com\TSI\MovieDatabase\CucumberRunner.class
+com\TSI\MovieDatabase\MovieTest.class
+com\TSI\MovieDatabase\ActorTest.class
 com\TSI\MovieDatabase\StepDefs\MovieTitleStepDefs.class
 com\TSI\MovieDatabase\StepDefs\ActorStepDefs.class

@@ -1,7 +1,7 @@
 package com.TSI.MovieDatabase;
 
 import javax.persistence.*;
-import java.util.List;
+
 
 @Entity
 @Table(name = "film")
@@ -30,6 +30,13 @@ public class Movie {
     public Movie(){
 
     }
+    public int getMovieId(){
+        return movieId;
+    }
+    public void setMovieId(int i){
+        this.movieId = movieId;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -54,9 +61,7 @@ public class Movie {
         this.length = length;
     }
 
-    public int getMovieId(){return movieId;}
 
-    public void setMovieId(){this.movieId = movieId; }
 
     public String getGenre() {
         return genre;

@@ -10,14 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fafcd19-7dcb-44aa-8504-db66b4e3531f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/ActorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/MovieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/MovieDatabaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/MovieDatabaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Movie.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <recent name="com.tsi.MovieDatabase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MovieDatabaseApplication">
+  <component name="RunManager" selected="JUnit.MovieTest.getIdTest">
     <configuration name="MovieDatabaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.TSI.MovieDatabase.MovieDatabaseApplication" />
       <module name="Jordan" />
@@ -129,21 +128,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Checking the movie title" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="ActorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jordan" />
-      <option name="NAME_FILTER" value="^Checking the movie title$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Checking the movie title$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Checking the movie title" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="com.TSI.MovieDatabase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.TSI.MovieDatabase" />
+      <option name="MAIN_CLASS_NAME" value="com.TSI.MovieDatabase.ActorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jordan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TSI.MovieDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.TSI.MovieDatabase" />
+      <option name="MAIN_CLASS_NAME" value="com.TSI.MovieDatabase.MovieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest.getIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jordan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TSI.MovieDatabase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.TSI.MovieDatabase" />
+      <option name="MAIN_CLASS_NAME" value="com.TSI.MovieDatabase.MovieTest" />
+      <option name="METHOD_NAME" value="getIdTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,14 +177,18 @@
     <list>
       <item itemvalue="Application.MovieDatabaseApplication" />
       <item itemvalue="Cucumber Java.MoviesTest" />
-      <item itemvalue="Cucumber Java.Scenario: Checking the movie title" />
       <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
+      <item itemvalue="JUnit.MovieTest.getIdTest" />
+      <item itemvalue="JUnit.MovieTest" />
+      <item itemvalue="JUnit.ActorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.getIdTest" />
         <item itemvalue="Application.MovieDatabaseApplication" />
+        <item itemvalue="JUnit.MovieTest" />
+        <item itemvalue="JUnit.ActorTest" />
         <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
-        <item itemvalue="Cucumber Java.Scenario: Checking the movie title" />
       </list>
     </recent_temporary>
   </component>
@@ -293,11 +323,31 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/MovieTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Movie$Scenario__An_actor_is_added_to_the_database.ic" NAME="Scenario: An actor is added to the database Coverage Results" MODIFIED="1637016222520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Movie$MovieDatabaseApplication.ic" NAME="MovieDatabaseApplication Coverage Results" MODIFIED="1637104460107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Movie$MovieTest_getIdTest.ic" NAME="MovieTest.getIdTest Coverage Results" MODIFIED="1637183099827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.TSI.MovieDatabase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Movie$MovieDatabaseApplication.ic" NAME="MovieDatabaseApplication Coverage Results" MODIFIED="1637184542587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.TSI.MovieDatabase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Movie$MovieTest.ic" NAME="MovieTest Coverage Results" MODIFIED="1637183233911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.TSI.MovieDatabase.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Movie$ActorTest.ic" NAME="ActorTest Coverage Results" MODIFIED="1637183960203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.TSI.MovieDatabase.*</FILTER>
     </SUITE>
   </component>
