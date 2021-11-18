@@ -10,15 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fafcd19-7dcb-44aa-8504-db66b4e3531f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/MovieStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TSI/MovieDatabase/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/MovieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/MovieTitleStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/MoviesTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MoviesTest.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/StepDefs/MovieTitleStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.ActorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.ActorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.MovieTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.MovieTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.ActorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.ActorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.MovieTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.MovieTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +104,7 @@
       <module name="Jordan" />
       <shortenClasspath name="NONE" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage" runner="jacoco" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

@@ -13,10 +13,12 @@ import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+
 import javax.sql.DataSource;
 
 
 @Configuration
+
 public class AppConfig {
 @Value("${cloud.aws.credentials.access-key}")
 private String accessKey;
@@ -61,7 +63,7 @@ private String secretKey;
     try {
         getSecretValueResult = client.getSecretValue(getSecretValueRequest);
     } catch (Exception e) {
-        e.printStackTrace();
+
     }
         if (getSecretValueResult.getSecretString() != null) {
             secret = getSecretValueResult.getSecretString();
