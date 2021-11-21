@@ -17,15 +17,15 @@ public class Movie {
     @Column(name = "length")
     private int length;
     @Column(name = "description")
-    private String genre;
+    private String description;
 
 
-    public Movie(int movieId, String title, int releaseYr, int length, String genre) {
+    public Movie(int movieId, String title, int releaseYr, int length, String description) {
         this.movieId = movieId;
         this.title = title;
         this.releaseYr = releaseYr;
         this.length = length;
-        this.genre = genre;
+        this.description = description;
     }
     public Movie(){
 
@@ -63,12 +63,12 @@ public class Movie {
 
 
 
-    public String getGenre() {
-        return genre;
+    public String getDescription() {
+        return description;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
 

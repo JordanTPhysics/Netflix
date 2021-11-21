@@ -25,7 +25,7 @@ public class MovieDatabaseApplication {
     }
 
 // CRUD OPERATIONS
-    @GetMapping("/allmovies")
+    @GetMapping("/allMovies")
     public @ResponseBody Iterable<Movie> getAllMovies() {
         return movieRepository.findAll();
     }
@@ -33,14 +33,14 @@ public class MovieDatabaseApplication {
     @PostMapping("/addMovie")
     public @ResponseBody
     String addAMovie(@RequestParam int movieId, @RequestParam String title
-            , @RequestParam int releaseYr, @RequestParam int length, @RequestParam String genre) {
+            , @RequestParam int releaseYr, @RequestParam int length, @RequestParam String description) {
 
 
-        Movie savedMovie = new Movie(movieId, title, releaseYr, length, genre);
+        Movie savedMovie = new Movie(movieId, title, releaseYr, length, description);
         movieRepository.save(savedMovie);
         return "Saved";
     }
-    @GetMapping("/allactors")
+    @GetMapping("/allActors")
     public @ResponseBody Iterable<Actor> getAllActors() {
         return actorRepository.findAll();
     }
@@ -72,9 +72,29 @@ public class MovieDatabaseApplication {
         Optional<Movie> deleteMovie =  movieRepository.findById(movieId);
         if(deleteMovie.isPresent()) {
             movieRepository.deleteById(movieId);
-            return "Movie "+ + movieId + " deleted";
+            return "Movie "+  movieId + " deleted";
         } else {
             throw new NullValueException("Movie with Id: " + movieId + "not found" );
         }
+    }
+    @PutMapping("/updateMovie")
+    public @ResponseBody
+    String updateMovie(@RequestParam int movieId, @RequestParam String title
+            , @RequestParam int releaseYr, @RequestParam int length, @RequestParam String description){
+        Movie updateMovie =  movieRepository.findById(movieId).get();
+        updateMovie.setDescription(description);
+        updateMovie.setLength(length);
+        updateMovie.setTitle(title);
+        updateMovie.setReleaseYr(releaseYr);
+
+        return "movie" + movieId + "has been updated";
+    }
+    @PutMapping("/updateActor")
+    public @ResponseBody String updateActor(@RequestParam int actorId, @RequestParam String firstName, @RequestParam String lastName){
+        Actor updateActor = actorRepository.findById(actorId).get();
+        updateActor.setFirstName(firstName);
+        updateActor.setLastName(lastName);
+
+        return "actor"+actorId+"has been updated";
     }
 }

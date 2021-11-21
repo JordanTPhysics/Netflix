@@ -27,6 +27,7 @@ private String secretKey;
     @Bean
     public DataSource dataSource(){
         AWSsecret secrets=getSecret();
+        assert secrets != null;
         return DataSourceBuilder
                 .create()
                 .url("jdbc:" + secrets.getEngine() + "://" + secrets.getHost() + ":" + secrets.getPort() + "/sakila")

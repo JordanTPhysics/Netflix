@@ -33,9 +33,10 @@ class MovieTest {
         assertEquals(1,testMovie1.getLength());
     }
     @Test
-    void getGenreTest(){
+    void getDescriptionTest(){
         Movie testMovie1 = new Movie();
-        testMovie1.setGenre("first");
-        assertEquals("first",testMovie1.getGenre());
+        testMovie1.setDescription("first");
+        assertEquals("first",testMovie1.getDescription());
     }
+
 }

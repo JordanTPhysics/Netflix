@@ -3,6 +3,8 @@ package com.TSI.MovieDatabase.StepDefs;
 import com.TSI.MovieDatabase.Actor;
 import com.TSI.MovieDatabase.ActorRepository;
 
+import io.cucumber.java.Before;
+import io.cucumber.java.ParameterType;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,44 +12,63 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 
+
+
 import static org.junit.Assert.assertEquals;
 
-import java.util.Optional;
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+
 public class ActorStepDefs {
 
-    Actor testActor;
+
     int actorId;
     String firstName;
     String lastName;
+
+
+
 
     @Autowired
     ActorRepository actorRepository;
 
 
-    @Given("a new actor")
+
+
+    @Given("user adds a new Actor")
     public void aNewActor() {
-        actorId = 20;
-        firstName = "Jason";
-        lastName = "Mason";
-
+        Actor testActor = new Actor(actorId, "Jiminy", "Salmon");
+        actorRepository.save(testActor);
+        int testActorId = testActor.getActorId();
     }
-    @When("the actor is put in")
-    public void theActorIsPutIn() {
-    testActor = new Actor(actorId,firstName,lastName);
-    actorRepository.save(testActor);
-
+    @When("the user searches for Actor ID {int}")
+    public void theActorIsPutIn(int testActorId) {
+        Actor actualActor = actorRepository.findById(testActorId).get();
+        int actualActorId = actualActor.getActorId();
     }
-    @Then("the actor will be found")
-    public void theActorWillBeFound() {
-        int expectedId = testActor.getActorId();
-        Optional<Actor> actualActorOption = actorRepository.findById(expectedId);
-        Actor actualActor = actualActorOption.get();
-        assertEquals("The actor was not found", testActor, actualActor);
+    @Then("the Actor with ID {int} will be found")
+    public void theActorWillBeFound(int actualActorId) {
 
-
+        assertEquals("The actor was not found",actualActorId,200);
     }
 
+
+    @Before
+    public void setup(){
+
+
+    }
+
+    @Given("user wants to list all actors")
+    public void listAllActors(){
+
+    }
+    @When("the actors are requested")
+    public void getAllActors(){
+
+    }
+    @Then("all actors are returned")
+    public void putAllActors(){
+
+    }
 
 
 }
