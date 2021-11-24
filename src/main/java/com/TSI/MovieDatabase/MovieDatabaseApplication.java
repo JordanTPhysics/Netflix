@@ -14,6 +14,7 @@ import java.util.Optional;
 @RestController
 @ResponseBody
 @RequestMapping("/films")
+@CrossOrigin(origins = "http://localhost:3000")
 public class MovieDatabaseApplication {
     @Autowired
     private MovieRepository movieRepository;
@@ -81,20 +82,30 @@ public class MovieDatabaseApplication {
     public @ResponseBody
     String updateMovie(@RequestParam int movieId, @RequestParam String title
             , @RequestParam int releaseYr, @RequestParam int length, @RequestParam String description){
-        Movie updateMovie =  movieRepository.findById(movieId).get();
+        Optional <Movie> updateOptMovie =  movieRepository.findById(movieId);
+        if(updateOptMovie.isPresent()){
+            Movie updateMovie = updateOptMovie.get();
         updateMovie.setDescription(description);
         updateMovie.setLength(length);
         updateMovie.setTitle(title);
         updateMovie.setReleaseYr(releaseYr);
+            return "movie" + movieId + "has been updated";
+        } else {
+            throw new NullValueException("There is no movie to update");
+        }
 
-        return "movie" + movieId + "has been updated";
+
     }
     @PutMapping("/updateActor")
     public @ResponseBody String updateActor(@RequestParam int actorId, @RequestParam String firstName, @RequestParam String lastName){
-        Actor updateActor = actorRepository.findById(actorId).get();
-        updateActor.setFirstName(firstName);
-        updateActor.setLastName(lastName);
-
-        return "actor"+actorId+"has been updated";
+        Optional <Actor> updateOptActor = actorRepository.findById(actorId);
+        if(updateOptActor.isPresent()) {
+            Actor updateActor = updateOptActor.get();
+            updateActor.setFirstName(firstName);
+            updateActor.setLastName(lastName);
+            return "actor" + actorId + "has been updated";
+        } else { throw new NullValueException("There is no actor to update");
+        }
+        }
     }
-}
+

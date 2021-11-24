@@ -42,7 +42,11 @@
     <connection id="38a0dedd-70d0-429d-88f5-bface6e4ea82" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="38a0dedd-70d0-429d-88f5-bface6e4ea82" dataset="sakila.actor" active-filter-id="" />
+    <filter-actions connection-id="38a0dedd-70d0-429d-88f5-bface6e4ea82" dataset="sakila.actor" active-filter-id="37951603-4cb9-4725-8c16-b54731bc0425">
+      <filter id="37951603-4cb9-4725-8c16-b54731bc0425" name="a" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="first_name" operator="=" value="a" active="true" />
+      </filter>
+    </filter-actions>
     <filter-actions connection-id="38a0dedd-70d0-429d-88f5-bface6e4ea82" dataset="sakila.payment" active-filter-id="" />
     <filter-actions connection-id="38a0dedd-70d0-429d-88f5-bface6e4ea82" dataset="sakila.film_actor" active-filter-id="bdd41406-1477-4df5-acc2-a38443a2cb3f">
       <filter id="bdd41406-1477-4df5-acc2-a38443a2cb3f" name="Filter" temporary="false" custom-name="true" type="basic" join-type="AND">

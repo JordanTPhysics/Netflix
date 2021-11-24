@@ -4,12 +4,12 @@ import com.TSI.MovieDatabase.Actor;
 import com.TSI.MovieDatabase.ActorRepository;
 
 import io.cucumber.java.Before;
-import io.cucumber.java.ParameterType;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+
 
 
 
@@ -47,7 +47,7 @@ public class ActorStepDefs {
     @Then("the Actor with ID {int} will be found")
     public void theActorWillBeFound(int actualActorId) {
 
-        assertEquals("The actor was not found",actualActorId,200);
+        assertEquals("The actor was not found",200,actualActorId);
     }
 
 
