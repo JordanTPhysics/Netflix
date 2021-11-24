@@ -10,29 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fafcd19-7dcb-44aa-8504-db66b4e3531f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MovieDatabase-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MovieDatabase-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AWSsecret.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Actor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/ActorRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/MovieDatabaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/TSI/MovieDatabase/MovieRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.ActorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.ActorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.MovieTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.TSI.MovieDatabase.MovieTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.ActorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.ActorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.MovieTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.TSI.MovieDatabase.MovieTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/ActorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/CucumberRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/MovieTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/TSI/MovieDatabase/StepDefs/MovieStepDefs.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
