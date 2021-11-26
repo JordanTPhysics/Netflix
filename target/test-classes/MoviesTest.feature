@@ -7,6 +7,6 @@ Feature: Movie attributes
 
 
   Scenario: Deleting inaccessible movie
-    Given an unused movie with ID 758 in database
-    When the user deletes the movie with ID 758
-    Then the movie ID 758 will not be found
+    Given an unused movie with ID 685 in database
+    When the user deletes the movie with ID 685
+    Then the movie ID 685 will not be found
