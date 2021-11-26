@@ -28,10 +28,7 @@ public class MovieStepDefs {
 
     //Update operation
 
-    @Before
-    public void setup(int movieId){
-    movieRepository.findById(movieId);
-    }
+
 
     @Given("a movie with a description and ID {int}")
     public void movieWithDescription(int movieId){

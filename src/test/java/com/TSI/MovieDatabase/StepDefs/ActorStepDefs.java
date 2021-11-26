@@ -3,7 +3,7 @@ package com.TSI.MovieDatabase.StepDefs;
 import com.TSI.MovieDatabase.Actor;
 import com.TSI.MovieDatabase.ActorRepository;
 
-import io.cucumber.java.Before;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -51,11 +51,7 @@ public class ActorStepDefs {
     }
 
 
-    @Before
-    public void setup(){
 
-
-    }
 
     @Given("user wants to list all actors")
     public void listAllActors(){

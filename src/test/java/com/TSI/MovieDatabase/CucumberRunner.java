@@ -12,4 +12,5 @@ import org.junit.runner.RunWith;
         glue = "com.TSI.MovieDatabase.StepDefs")
 @CucumberContextConfiguration
 public class CucumberRunner {
+
 }

@@ -12,6 +12,11 @@
     <list default="true" id="2fafcd19-7dcb-44aa-8504-db66b4e3531f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Jordan_jar/Jordan.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/ActorStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/MovieStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/TSI/MovieDatabase/StepDefs/MovieStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,15 +133,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Update description of movies" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Deleting inaccessible movie" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/MoviesTest.feature" />
-      <option name="GLUE" value="cucumber.api.spring com.TSI.MovieDatabase.StepDefs" />
+      <option name="GLUE" value="cucumber.api.spring com.TSI.MovieDatabase" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Jordan" />
-      <option name="NAME_FILTER" value="^Update description of movies$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Update description of movies$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Update description of movies" />
+      <option name="NAME_FILTER" value="^Deleting inaccessible movie$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Deleting inaccessible movie$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Deleting inaccessible movie" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -184,17 +189,17 @@
       <item itemvalue="Application.MovieDatabaseApplication" />
       <item itemvalue="Cucumber Java.MoviesTest" />
       <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
-      <item itemvalue="Cucumber Java.Scenario: Update description of movies" />
       <item itemvalue="JUnit.ActorTest.actorRepositoryTest" />
       <item itemvalue="JUnit.testyTest.untitled" />
+      <item itemvalue="Cucumber Java.Scenario: Deleting inaccessible movie" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MovieDatabaseApplication" />
+        <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
+        <item itemvalue="Cucumber Java.Scenario: Deleting inaccessible movie" />
         <item itemvalue="JUnit.testyTest.untitled" />
         <item itemvalue="JUnit.ActorTest.actorRepositoryTest" />
-        <item itemvalue="Cucumber Java.Scenario: Update description of movies" />
-        <item itemvalue="Cucumber Java.Scenario: An actor is added to the database" />
       </list>
     </recent_temporary>
   </component>
